@@ -9,5 +9,5 @@ Summary:
 ### 1 Pre-requisites
 
 - Node.js 12.x
-- git  
+- git    
 
