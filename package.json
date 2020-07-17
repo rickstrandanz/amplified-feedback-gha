@@ -1,0 +1,26 @@
+{
+  "name": "amplified-feedback-gha",
+  "version": "1.0.0",
+  "description": "Summary:\r - Spike to explore Pipeline Feedback from Github Actions to various channels (ex: Slack)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickstrandanz/amplified-feedback-gha.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rickstrandanz/amplified-feedback-gha/issues"
+  },
+  "homepage": "https://github.com/rickstrandanz/amplified-feedback-gha#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^3.0.0",
+    "@slack/web-api": "^5.10.0",
+    "@slack/webhook": "^5.0.3"
+  }
+}

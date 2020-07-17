@@ -1,0 +1,20 @@
+name: 'Amplified Feedback for Github Actions'
+description: 'Spike to explore Pipeline Feedback from Github Actions to various channels (ex: Slack)'
+inputs:
+  slack-token: 
+    description: "Slack app bot token required for webapi sdk"
+    required: true
+  slack-channel:  # id of input
+    description: 'Slack channel ID (not name) to send feedback'
+    required: true
+  message:
+    description: "Message to send to a slack channel"
+    required: true
+  slack-channel-webhook: 
+    description: 'Unique webhook for the chosen channel'
+outputs:
+  time: # id of output
+    description: 'When last run was completed'
+runs:
+  using: 'node12'
+  main: 'index.js'
