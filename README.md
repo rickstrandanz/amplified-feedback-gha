@@ -63,5 +63,5 @@ For the bot, you can specify any channel to send notifications to by using the c
 
 - Decide on the bot or webhook approach (or both)
 - Further work to publish the action
-- Feedback and approval for security
+- Feedback and approval from security
 - Looking into any other potential integrations
