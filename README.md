@@ -35,7 +35,7 @@ Setup a Slack app in the ANZx organization, store a few secrets in your repo
 - Add a new Slack app https://api.slack.com/apps
   - Provide a unique app name and select anzx as the Slack workspace
  - Add `Incoming Webhooks` feature
-  - Create a webhook for the desired channel and store the URL as a secret in your repository `CHANNEL_CHANNEL_NAME`. Make sure to update the [actions file](https://github.com/rickstrandanz/amplified-feedback-gha/blob/master/.github/workflows/main.yml) and specify this new secret.
+   - Create a webhook for the desired channel and store the URL as a secret in your repository `CHANNEL_CHANNEL_NAME`. Make sure to update the [actions file](https://github.com/rickstrandanz/amplified-feedback-gha/blob/master/.github/workflows/main.yml) and specify this new secret.
 
 - Add `Bots` feature:
   - Add the following [scopes](https://api.slack.com/scopes) to the bot 
