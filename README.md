@@ -1,5 +1,5 @@
 # amplified-feedback-gha
-###Summary:
+### Summary:
 
 Spike to explore Pipeline Feedback from Github Actions to various channels (ex: Slack) - https://jira.service.anz/browse/ABT-9744
 
@@ -24,11 +24,11 @@ There are 2 approaches, using webhooks or a bot to send the notifications. Web h
 
 ### 2 How to run
 
-####2.1 Test on this repo
+#### 2.1 Test on this repo
 
 Clone and push up a change and review the output on the ANZx Slack channel `#cicd-feedback-poc` https://anzx.slack.com/archives/C017WDC1YMN
 
-####2.2 Test on your own repo with your own Slack app
+#### 2.2 Test on your own repo with your own Slack app
 
 Setup a Slack app in the ANZx organization, store a few secrets in your repo
 
@@ -43,7 +43,7 @@ Setup a Slack app in the ANZx organization, store a few secrets in your repo
    - `chat:write:public`
   - Store the `Bot User OAuth Access Token` as the secret `SLACK_TOKEN`
 
-####2.3 Usage
+#### 2.3 Usage
 
 In your [actions file](https://github.com/rickstrandanz/amplified-feedback-gha/blob/master/.github/workflows/main.yml) create notifications where required using the following syntax:
 
