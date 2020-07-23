@@ -15,7 +15,7 @@ jobs:
         id: amplified-feedback
         with:
           slack-token: ${{ secrets.SLACK_TOKEN }} #token used by our app slack bot
-          slack-channel: 'C017WDC1YMN' #cicd-feedback-poc where the slack bot posts the notification
+          slack-channel: '#cicd-feedback-poc' #cicd-feedback-poc where the slack bot posts the notification
           slack-channel-webhook: ${{ secrets.CHANNEL_CICD_FEEDBACK_POC }}
           message: 'Workflow triggered :nerd_face:' #send a notification that this step in the workflow had been triggered
         #if the above step fails send a slack failure message
@@ -25,7 +25,7 @@ jobs:
         id: amplified-feedback-failure
         with:
           slack-token: ${{ secrets.SLACK_TOKEN }} 
-          slack-channel: 'C017WDC1YMN'
+          slack-channel: '#cicd-feedback-poc'
           slack-channel-webhook: ${{ secrets.CHANNEL_CICD_FEEDBACK_POC }}
           message: 'FAILURE :x:'
       - name: Get the output time
@@ -37,6 +37,7 @@ jobs:
         id: amplified-feedback-success
         with:
           slack-token: ${{ secrets.SLACK_TOKEN }} 
-          slack-channel: 'C017WDC1YMN' 
+          slack-channel: '#cicd-feedback-poc
+          ' 
           slack-channel-webhook: ${{ secrets.CHANNEL_CICD_FEEDBACK_POC }}
           message: 'SUCCESS :heavy_check_mark:'

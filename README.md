@@ -53,11 +53,11 @@ In your [actions file](https://github.com/rickstrandanz/amplified-feedback-gha/b
   id: amplified-feedback
   with:
     slack-token: ${{ secrets.SLACK_TOKEN }} #token used by our app slack bot
-    slack-channel: 'C017WDC1YMN' #cicd-feedback-poc where the slack bot posts the notification
+    slack-channel: '#cicd-feedback-poc' #cicd-feedback-poc where the slack bot posts the notification
     slack-channel-webhook: ${{ secrets.CHANNEL_CICD_FEEDBACK_POC }}
     message: 'Workflow triggered :nerd_face:' #send a notification that this step in the workflow had been triggered
 ```
-For the bot, you can specify any channel to send notifications to by using the channel id. To get the channel id, right click on the channel and copy the link. The id will be the last value in the url. For example: `cicd-feedback-poc` -> https://anzx.slack.com/archives/C017WDC1YMN
+For the bot, you can specify any channel to send notifications to by using the channel id. For example: `#cicd-feedback-poc`
 
 ### Next Steps
 
